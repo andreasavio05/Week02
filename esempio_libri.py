@@ -1,3 +1,4 @@
+# ESEMPIO LIBRI
 # Demonstrating the use of classes, e.g., defining class Book
 
 # The class describes the structure of a book, with its attributes
@@ -29,11 +30,17 @@ book2 = Book("I pilastri della terra", "K. Follet", 1000)
 
 print(book2.title, book2.author, book2.num_pages)
 
-# Like other data, books can be stored in data containers, like lists
+interi = [5, 7, 9]
+stringa = 'abc'
 
-books = [book1, book2]
+# as much as i can create containers (lists...) of primitive/elementary data like int or str
+# i can also create containers of other types of data, like books
 
-# And the data container can be iterated as seen already
+books = [book1]
+books.append(book2)
 
 for book in books:
     print(book.title, book.author, book.num_pages)
+
+
+
