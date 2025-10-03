@@ -7,10 +7,18 @@ class Car:
         self.bodyColor = ''
         self.turnedOn = False
 
+    def paint(self, color):
+        self.bodyColor = color     # cambio colore
+
+    def turnOn(self):
+        self.turnedOn = True
 
 c = Car()
 
-# posso accedere agli attributi dell'oggetto
+# posso accedere agli attributi dell'oggetto c con la notazione puntata, scrittura e lettura
 
 c.licensePlate = 'AB123CD'
-print(c.licensePlate)
+c.paint('red')
+c.turnOn()
+
+
